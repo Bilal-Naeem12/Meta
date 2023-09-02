@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Pangolin&family=Tektur:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;600&family=Pangolin&family=Tektur:wght@600&display=swap');
 
-.spacer {
-    width: 100%;
-
-    height: 150vh;
-
-}
 
 /* CSS reset */
 
@@ -20,7 +14,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: rgb(45, 58, 24);
     color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1.5vw;
 }
 
 *::selection {
@@ -37,7 +31,7 @@ a {
 a:hover {
 
     color: yellow;
-    font-size: 1.5rem;
+    font-size: 2vw;
 }
 
 
@@ -48,7 +42,7 @@ li {
 
 header {
     width: calc(100% - 8vw);
-    height: 10vh;
+    height: 7vw;
     display: flex;
 
     padding-inline: 4vw;
@@ -91,24 +85,26 @@ h2 {
 
 
 /* Targeting */
+
+
 header>a {
 
 
 
     height: 100%;
-    font-size: 2rem;
+    font-size: 2vw;
 
 
     gap: 20px;
 }
 
 header a:hover {
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 #logo {
-
-    max-width: 30px;
+width: 20px;
+    min-width: 20px;
 
 }
 
@@ -133,7 +129,7 @@ nav>ul {
 
     position: relative;
 
-    height: 95vh;
+    height: 95vw;
 }
 
 .banner {
@@ -157,20 +153,20 @@ nav>ul {
     transform: translate(-50%, -50%);
     flex-direction: column;
     gap: 50px;
-    font-size: 2rem;
-
+    font-size: 2vw;
+text-align: center;
     width: 60%;
 }
 
 .banner_text>h1 {
 
-    font-size: 4rem;
-
+    font-size: 5vw;
+    width: 100vw;
 }
 
 .banner_text>h2 {
-
-    font-size: 6rem;
+    width: 100vw;
+    font-size: 6vw;
 
 }
 
@@ -186,14 +182,14 @@ nav>ul {
 
 .menu_heading>h1 {
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 3vw;
     margin-bottom: 10px;
     font-family: 'Great Vibes', cursive;
 }
 
 .menu_heading>h2 {
 
-    font-size: 3rem;
+    font-size: 3vw;
     font-family: inherit;
 }
 
@@ -234,7 +230,7 @@ nav>ul {
 
 .meal>h3 {
     color: #000000;
-    font-size: 1.1rem;
+    font-size: 2vw;
     margin: 20px;
 
 }
@@ -275,12 +271,12 @@ justify-content: start;
     flex-wrap: wrap;
     width: 47%;
     margin-bottom: 30px;
-    min-width: 300px;
+
 }
 
 label {
     color: #ffffffec;
-    font-size: 1.7rem;
+    font-size: 1.3vw;
     font-weight: 100;
 }
 
@@ -320,7 +316,7 @@ button:hover {
 
 }
  /* about */
-.about{
+.contact{
     width: 80%;
     margin: auto;
     justify-content: space-between;
@@ -364,4 +360,81 @@ footer div{
 #footer_logo + h1{
 
    color: white;
+}
+
+
+
+
+/* media quries */
+
+@media (max-width : 1051px) {
+   a:hover {
+
+ 
+    font-size: 2vh;
+}
+
+    .form_block div {
+    
+  
+
+        width: 100%;
+ 
+    }
+    header>a {
+
+
+
+    
+    font-size: 2vh;
+
+
+}
+header a:hover {
+    font-size: 2vh;
+}
+.banner_text {
+
+
+
+    font-size: 3vh;
+
+
+}
+.banner_text>h1 {
+
+    font-size: 5vh;
+
+}
+
+.banner_text>h2 {
+
+    font-size: 6vh;
+
+}
+
+
+.menu_heading>h1 {
+        font-size: 3vh;
+ 
+}
+.menu_heading>h2 {
+
+    font-size: 3vh;
+
+}
+.meal>h3 {
+
+    font-size: 2vh;
+
+
+}
+label {
+
+    font-size: 1.3vh;
+
+
+
+}
+
 }
